@@ -1,0 +1,3 @@
+#!/bin/sh
+setxkbmap -layout dvorak_intl_ndk_fad
+
