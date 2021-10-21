@@ -54,6 +54,7 @@ Plug 'ambv/black'
 
 "TTp
 Plug 'JuliaEditorSupport/julia-vim'
+Plug 'kdheepak/JuliaFormatter.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'simrat39/rust-tools.nvim'
 Plug 'sheerun/vim-polyglot'
@@ -191,7 +192,6 @@ augroup END
 "-----------------------
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggle
-let g:tex_flavor = 'latex'
 
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -225,3 +225,26 @@ source ~/.config/nvim/shortcuts.vim
 "Compiler
 " Compile document, be it groff/LaTeX/markdown/etc.
 map <leader>,c :w! \| !compiler <c-r>%<CR>
+
+" Vimtex
+augroup VimTex
+    au!
+    au FIleType tex setlocal spell spelllang=en_us
+    au FIleType tex setlocal wrap
+    au FIleType tex nnoremap <buffer> <leader>f :VimtexTocToggle<CR>
+augroup END
+let g:tex_flavor = 'latex'
+
+" Julia
+" formatting
+"let g:JuliaFormatter_always_launch_server=1
+let g:JuliaFormatter_use_sysimg=1
+let g:JuliaFormatter_options = {
+    \ 'style' : 'blue',
+    \ }
+
+augroup Julia
+    " formatting
+    au FIleType julia nnoremap <buffer> <leader>f :JuliaFormatterFormat<CR>
+    au FIleType julia vnoremap <buffer> <leader>f :JuliaFormatterFormat<CR>
+augroup END
