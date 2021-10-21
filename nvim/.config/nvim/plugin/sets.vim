@@ -1,4 +1,3 @@
-
 set wildmode=longest,list,full
 set wildmenu
 
@@ -18,7 +17,7 @@ set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
-set termguicolors
+set termguicolors " this variable must be enabled for colors to be applied properly
 set scrolloff=8
 " set noshowmode
 set signcolumn=yes
