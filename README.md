@@ -4,6 +4,7 @@ Remember to:
 - Add git key to github.
 - Add keyboard layout.
 - Check Bashrc.
+- Change brightness file -> sudo find /sys/ -type f -iname 'brightness'
 
 # Install
 - git
@@ -26,6 +27,7 @@ Remember to:
 - Inkscape + (LaTeX app TexTex)
 - rar
 - zsh
+- fzf
 
 # Snap
 - VCL
