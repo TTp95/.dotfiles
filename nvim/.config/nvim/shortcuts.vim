@@ -3,9 +3,9 @@
 	" Word count:
 	autocmd FileType tex map <leader>w :w !detex \| wc -w<CR>
 	" Code snippets
-	autocmd FileType tex nnoremap ,plx :-1read $HOME/.config/plantillas/.plantillax.tex<CR>
-	autocmd FileType tex nnoremap ,plp :-1read $HOME/.config/plantillas/.plantilla.tex<CR>
-	autocmd FileType tex nnoremap ,plb :-1read $HOME/.config/plantillas/.plantillab.tex<CR>
+	autocmd FileType tex nnoremap ,plx :-1read $HOME/.config/templates/.plantillax.tex<CR>
+	autocmd FileType tex nnoremap ,plp :-1read $HOME/.config/templates/.plantilla.tex<CR>
+	autocmd FileType tex nnoremap ,plb :-1read $HOME/.config/templates/.plantillab.tex<CR>
 	autocmd FileType tex inoremap ,fr \begin{frame}<Enter>\frametitle{}<Enter><Enter><++><Enter><Enter>\end{frame}<Enter><Enter><++><Esc>6kf}i
 	autocmd FileType tex inoremap ,fi \begin{figure}<Enter>\centering<Enter>\includegraphics{<++>}<Enter>\caption{<++>}<Enter>\label{fig:<++>}<Enter>\end{figure}<Enter><Enter><++><Esc>3kA
 	autocmd FileType tex inoremap ,exe \begin{exe}<Enter>\ex<Space><Enter>\end{exe}<Enter><Enter><++><Esc>3kA

@@ -16,7 +16,7 @@ Remember to:
 - lua
 - Rust & cargo & rust-analyzer (rust-analyzer Language Server Binary to path)
 - Node & npm
-- LaTeX & latexmk (vimtex)
+- LaTeX & latexmk (vimtex) & luatex
 - Pandoc 
 - Atom
 - Julia
@@ -28,6 +28,7 @@ Remember to:
 - rar
 - zsh
 - fzf
+- htop
 
 # Snap
 - VCL
