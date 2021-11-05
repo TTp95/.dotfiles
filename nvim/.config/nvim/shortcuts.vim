@@ -73,7 +73,7 @@
 
 
 "MARKDOWN
-	autocmd FileType markdown,rm nnoremap ,pl :-1read $HOME/.config/plantillas/.plantillamd<CR>
+	autocmd FileType markdown,rm nnoremap ,pl :-1read $HOME/.config/templates/.plantillamd.tex<CR>
 	autocmd Filetype markdown,rmd inoremap ,n ---<Enter><Enter>
 	autocmd Filetype markdown,rmd inoremap ,b ****<++><Esc>F*hi
 	autocmd Filetype markdown,rmd inoremap ,s ~~~~<++><Esc>F~hi
