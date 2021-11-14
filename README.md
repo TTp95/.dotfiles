@@ -20,7 +20,7 @@ Remember to:
 - Pandoc 
 - Atom
 - Julia
-- Install lsp servers (julials, pylsp, texlive, 'rust')
+- Install lsp servers (julials (Pkg), pylsp (pip), TexLab (cargo), rust (Plug))
 - i3 + i3 status (from starter pack)
 - picom
 - paraview
@@ -29,6 +29,7 @@ Remember to:
 - zsh
 - fzf
 - htop
+- lldb
 
 # Snap
 - VCL
