@@ -30,6 +30,8 @@ Remember to:
 - fzf
 - htop
 - lldb
+- Openboard
+- Homebrew
 
 # Snap
 - VCL
@@ -37,3 +39,5 @@ Remember to:
 - Zoom 
 - Skype
 
+# Pay License
+- ReadCube Papers

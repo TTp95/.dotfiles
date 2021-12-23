@@ -13,7 +13,8 @@ floating_modifier $mod
 exec --no-startup-id "setxkbmap -layout dvorak_intl_ndk_fad, us"
 exec_always --no-startup-id "setxkbmap -layout dvorak_intl_ndk_fad, us"
 exec --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
-exec --no-startup-id hsetroot -center ~/.wallpaper.png
+exec --no-startup-id hsetroot -center ~/.wallpaper.jpeg
+#exec --no-startup-id hsetroot -center ~/.wallpaper.png
 exec --no-startup-id xsettingsd &
 exec --no-startup-id picom -b
 #exec --no-startup-id compton -b
@@ -21,7 +22,7 @@ exec_always --no-startup-id nm-applet
 exec --no-startup-id clipit &;
 #exec --no-startup-id dunst
 
-# start a terminal
+# start a terminale
 bindsym $mod+Return exec gnome-terminal
 bindsym $mod+x exec kitty
 
@@ -39,13 +40,13 @@ bindsym $mod+Tab workspace back_and_forth
 
 bindsym $mod+Shift+h exec firefox
 bindsym $mod+Shift+t exec nautilus
-bindsym $mod+Shift+n exec obsidian
+bindsym $mod+Shift+n exec inkscape
 bindsym $mod+Shift+s exec paraview
 
 bindsym $mod+Shift+a exec dvorakInternational
-#bindsym $mod+Shift+o exec
-#bindsym $mod+Shift+e exec
-#bindsym $mod+Shift+u exec
+bindsym $mod+Shift+o exec discord
+bindsym $mod+Shift+e exec skype
+bindsym $mod+Shift+u exec zoom-client
 
 # kill focused window
 bindsym $mod+Shift+c kill
@@ -82,8 +83,8 @@ bindsym $mod+space floating toggle
 bindsym $mod+Shift+space focus mode_toggle
 
 # switch to workspace
-bindsym $alt+Control+Right workspace next
-bindsym $alt+Control+Left workspace prev
+bindsym $mod+Control+Right workspace next
+bindsym $mod+Control+Left workspace prev
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
@@ -195,4 +196,4 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec ~/.config/i3/bin/backlight -inc 20
-bindsym XF86MonBrightnessDown exec ~/.config/bin/i3/backlight -dec 20
+bindsym XF86MonBrightnessDown exec ~/.config/bin/i3/backlight -inc -20
