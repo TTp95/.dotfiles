@@ -220,9 +220,6 @@ map <leader>tm :tabmove
 map <leader>tc :tabclose<cr>
 map <leader>tz :tabonly<cr>
 
-" Shortcuts
-source ~/.config/nvim/shortcuts.vim
-
 "Compiler
 " Compile document, be it groff/LaTeX/markdown/etc.
 map <leader>,c :w! \| !compiler <c-r>%<CR>
@@ -232,7 +229,10 @@ augroup VimTex
     au!
     au FIleType tex setlocal spell spelllang=en_us
     au FIleType tex setlocal wrap
+    au FIleType tex setlocal columns=100
     au FIleType tex nnoremap <buffer> <leader>f :VimtexTocToggle<CR>
+    " Shortcuts
+    source ~/.config/nvim/shortcuts.vim
 augroup END
 let g:tex_flavor = 'latex'
 
@@ -241,6 +241,9 @@ augroup Markdown
     au!
     au FIleType md setlocal spell spelllang=en_us
     au FIleType md setlocal wrap
+    au FIleType md setlocal columns=100
+    " Shortcuts
+    source ~/.config/nvim/shortcuts.vim
 augroup END
 
 " Julia

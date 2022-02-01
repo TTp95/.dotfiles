@@ -21,6 +21,7 @@ Remember to:
 - Atom
 - Julia
 - Install lsp servers (julials (Pkg), pylsp (pip), TexLab (cargo), rust (Plug))
+- julials (LanguageServer, SymbolServer, CSTParser, and StaticLint)
 - i3 + i3 status (from starter pack)
 - picom
 - paraview
