@@ -8,6 +8,7 @@ local source_mapping = {
 	nvim_lua = "[Lua]",
 	cmp_tabnine = "[TN]",
 	path = "[Path]",
+	luasnip = "[Snippet]",
 }
 local lspkind = require("lspkind")
 require('lspkind').init({
@@ -106,7 +107,8 @@ local snippets_paths = function()
     local plugins = { "friendly-snippets" }
     local paths = {}
     local path
-    local root_path = vim.env.HOME .. '/.vim/plugged/'
+    --local root_path = vim.env.HOME .. '/.vim/plugged/'
+    local root_path = '/home/nk/.config/nvim/plugged/'
     for _, plug in ipairs(plugins) do
         path = root_path .. plug
         if vim.fn.isdirectory(path) ~= 0 then
