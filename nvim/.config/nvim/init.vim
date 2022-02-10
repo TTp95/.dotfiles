@@ -232,6 +232,8 @@ augroup VimTex
     au FIleType tex setlocal wrap
     au FIleType tex setlocal columns=100
     au FIleType tex nnoremap <buffer> <leader>f :VimtexTocToggle<CR>
+    au FIleType tex nnoremap j gj
+    au FIleType tex nnoremap k gk
     " Shortcuts
     source ~/.config/nvim/shortcuts.vim
 augroup END
@@ -243,6 +245,8 @@ augroup Markdown
     au FIleType md setlocal spell spelllang=en_us
     au FIleType md setlocal wrap
     au FIleType md setlocal columns=100
+    au FIleType tex nnoremap j gj
+    au FIleType tex nnoremap k gk
     " Shortcuts
     source ~/.config/nvim/shortcuts.vim
 augroup END
