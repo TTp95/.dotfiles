@@ -25,7 +25,25 @@ augroup END
 lua require'lspconfig'.pylsp.setup{ on_attach=on_attach }
 lua require'lspconfig'.julials.setup{on_attach=on_attach }
 lua require'lspconfig'.texlab.setup{ on_attach=on_attach }
-lua require('rust-tools').setup({ on_attach=on_attach })
+
+" Rust
+lua << EOF
+-- Update this path
+local extension_path = vim.env.HOME .. '/.vscode/extensions/vadimcn.vscode-lldb-1.6.10/'
+local codelldb_path = extension_path .. 'adapter/codelldb'
+local liblldb_path = extension_path .. 'lldb/lib/liblldb.so'
+
+local opts = {
+    -- ... other configs
+    dap = {
+        adapter = require('rust-tools.dap').get_codelldb_adapter(
+            codelldb_path, liblldb_path)
+    }
+}
+
+-- Normal setup
+require('rust-tools').setup(opts)
+EOF
 
 " Julia Lang
 autocmd Filetype julia setlocal omnifunc=v:lua.vim.lsp.omnifunc
@@ -33,29 +51,13 @@ autocmd Filetype julia hi link juliaFunctionCall Identifier
 autocmd Filetype julia hi Operator guifg=Red ctermfg=Red
 autocmd Filetype julia lua require("lsp_signature").on_attach()
 
-" Rust
-autocmd Filetype rust lua require('rust-tools').setup({ on_attach=on_attach })
-
-"let g:compe = {}
-"let g:compe.enabled = v:true
-"let g:compe.autocomplete = v:true
-"let g:compe.debug = v:false
-"let g:compe.min_length = 1
-"let g:compe.preselect = 'enable'
-"let g:compe.throttle_time = 80
-"let g:compe.source_timeout = 200
-"let g:compe.incomplete_delay = 400
-"let g:compe.max_abbr_width = 100
-"let g:compe.max_kind_width = 100
-"let g:compe.max_menu_width = 100
-"let g:compe.documentation = v:true
-
-"let g:compe.source = {}
-"let g:compe.source.path = v:true
-"let g:compe.source.buffer = v:true
-"let g:compe.source.calc = v:true
-"let g:compe.source.nvim_lsp = v:true
-"let g:compe.source.nvim_lua = v:true
-"let g:compe.source.vsnip = v:true
-
-"inoremap <silent><expr> <CR>      compe#confirm('<CR>')
+"nvim-dap
+nnoremap <silent> <F5> :lua require'dap'.continue()<CR>
+nnoremap <silent> <F10> :lua require'dap'.step_over()<CR>
+nnoremap <silent> <F11> :lua require'dap'.step_into()<CR>
+nnoremap <silent> <F12> :lua require'dap'.step_out()<CR>
+nnoremap <silent> <leader>b :lua require'dap'.toggle_breakpoint()<CR>
+nnoremap <silent> <leader>B :lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>
+nnoremap <silent> <leader>lp :lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>
+nnoremap <silent> <leader>dr :lua require'dap'.repl.open()<CR>
+nnoremap <silent> <leader>dl :lua require'dap'.run_last()<CR>

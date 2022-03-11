@@ -115,7 +115,7 @@ local function config(_config)
 end
 
 -- who even uses this?
-require'lspconfig'.rust_analyzer.setup(config({}))
+--require'lspconfig'.rust_analyzer.setup(config({}))
 
 local opts = {
     -- whether to highlight the currently hovered symbol

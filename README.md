@@ -5,6 +5,7 @@ Remember to:
 - Add keyboard layout.
 - Check Bashrc.
 - Change brightness file -> sudo find /sys/ -type f -iname 'brightness'
+- Remember to use nvim -> :checkhealth
 
 # Install
 - git
@@ -14,7 +15,8 @@ Remember to:
 - Python 3
 - pip3 
 - lua
-- Rust & cargo & rust-analyzer (rust-analyzer Language Server Binary to path)
+- Rust & cargo & rust-analyzer (rust-analyzer Language Server Binary to path) & cargo-edit
+- java 
 - Node & npm
 - LaTeX & latexmk (vimtex) & luatex
 - Pandoc 
@@ -34,10 +36,11 @@ Remember to:
 - lldb
 - Openboard
 - Homebrew
+- YaLafi
 
 # Snap
 - VCL
-- Visual Code
+- Visual Code (lldb)
 - Zoom 
 - Skype
 - Discord
