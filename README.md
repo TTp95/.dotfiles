@@ -2,7 +2,7 @@
 Remember to:
 - Create common folders before stow.
 - Add git key to github.
-- Add keyboard layout.
+- Add keyboard layout. -> /usr/share/X11/xkb/symbols
 - Check Bashrc.
 - Change brightness file -> sudo find /sys/ -type f -iname 'brightness'
 - Remember to use nvim -> :checkhealth

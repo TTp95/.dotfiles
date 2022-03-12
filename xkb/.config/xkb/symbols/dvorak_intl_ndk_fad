@@ -59,7 +59,9 @@ xkb_symbols "dvorak-intl-ndk" {
     key <AB09> { [         v,          V                                    ] };
     key <AB10> { [         z,          Z,              ae,                AE] };
 
-    key <BKSL> { [ backslash,        bar,       notsign,        brokenbar ] };
+    key <BKSL> { [ backslash,        bar,         notsign,        brokenbar ] };
+    
+    key <TAB>  { [ Tab,     ISO_Left_Tab,          Delete   ]   };
 
     include "level3(ralt_switch)"
 };
