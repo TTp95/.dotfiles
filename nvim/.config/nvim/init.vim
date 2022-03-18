@@ -227,6 +227,7 @@ map <leader>tz :tabonly<cr>
 " Compile document, be it groff/LaTeX/markdown/etc.
 map <leader>,c :w! \| !compiler <c-r>%<CR>
 
+
 " Vimtex
 augroup VimTex
     au!
@@ -241,9 +242,10 @@ augroup VimTex
     au FIleType tex inoremap <Up> <C-o>gk
     au FIleType tex vnoremap <Up> gk
     " Shortcuts
-    source ~/.config/nvim/shortcuts.vim
+    source ~/.config/nvim/scripts/shortcuts.vim
 augroup END
 let g:tex_flavor = 'latex'
+
 
 " Markdown
 augroup Markdown
@@ -258,8 +260,9 @@ augroup Markdown
     au FIleType md inoremap <Up> <C-o>gk
     au FIleType md vnoremap <Up> gk
     " Shortcuts
-    source ~/.config/nvim/shortcuts.vim
+    source ~/.config/nvim/scripts/shortcuts.vim
 augroup END
+
 
 " Julia
 " formatting
@@ -275,16 +278,20 @@ augroup Julia
     au FIleType julia vnoremap <buffer> <leader>f :JuliaFormatterFormat<CR>
 augroup END
 
+" FreeFEM
+autocmd BufNewFile,BufRead *.edp source ~/.config/nvim/scripts/edp.vim
+
 " vim-grammarous
 let g:grammarous#languagetool_cmd = '/home/nk/.local/bin/yalafi-grammarous'
 map <F9> :GrammarousCheck --lang=en-GB<CR>
 let g:grammarous#hooks = {}
+
 function! g:grammarous#hooks.on_check(errs) abort
     nmap <buffer><C-l> <Plug>(grammarous-move-to-next-error)
     nmap <buffer><C-h> <Plug>(grammarous-move-to-previous-error)
 endfunction
+
 function! g:grammarous#hooks.on_reset(errs) abort
     nunmap <buffer><C-l>
     nunmap <buffer><C-h>
 endfunction
-

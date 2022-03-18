@@ -37,10 +37,11 @@ Remember to:
 - Openboard
 - Homebrew
 - YaLafi
+- FreeFEM++
 
 # Snap
 - VCL
-- Visual Code (lldb)
+- Visual Code (Code lldb)
 - Zoom 
 - Skype
 - Discord
