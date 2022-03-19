@@ -134,8 +134,15 @@ fi
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:/home/nk/software/julia-1.6.3/bin"
+# export PATH="$PATH:/home/nk/software/julia-1.7.1/bin"
 export PATH="$PATH:/home/nk/software/nvim/usr/bin"
 export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/software/linuxbrew/.linuxbrew/bin"
+export PATH="$PATH:$HOME/software/freefem/bin"
 
 export EDITOR=nvim
 
+
+# BEGIN_KITTY_SHELL_INTEGRATION
+if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
+# END_KITTY_SHELL_INTEGRATION
