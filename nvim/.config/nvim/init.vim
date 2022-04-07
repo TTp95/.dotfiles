@@ -59,7 +59,7 @@ Plug 'ambv/black'
 "TTp
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'kdheepak/JuliaFormatter.vim'
-Plug 'rust-lang/rust.vim'
+"Plug 'rust-lang/rust.vim'
 Plug 'simrat39/rust-tools.nvim'
 Plug 'sheerun/vim-polyglot'
 Plug 'airblade/vim-gitgutter'

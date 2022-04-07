@@ -11,9 +11,7 @@ local source_mapping = {
 	luasnip = "[Snippet]",
 }
 local lspkind = require("lspkind")
-require('lspkind').init({
-    with_text = true,
-})
+require('lspkind').init({})
 
 -- Luasnip
 local has_words_before = function()
