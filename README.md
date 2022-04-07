@@ -15,7 +15,7 @@ Remember to:
 - Python 3
 - pip3 
 - lua
-- Rust & cargo & rust-analyzer (rust-analyzer Language Server Binary to path) & cargo-edit
+- Rust & cargo & rust-analyzer (rust-analyzer Language Server Binary to path) & cargo-edit & clippy
 - java 
 - Node & npm
 - LaTeX & latexmk (vimtex) & luatex
