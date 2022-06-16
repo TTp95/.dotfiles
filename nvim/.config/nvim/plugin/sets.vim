@@ -35,3 +35,5 @@ set updatetime=50
 set shortmess+=c
 
 set colorcolumn=80
+
+set mouse=a

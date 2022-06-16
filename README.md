@@ -13,18 +13,18 @@ Remember to:
 - neovim
 - Kitty
 - Python 3
-- pip3 
+- pip3
 - lua
 - Rust & cargo & rust-analyzer (rust-analyzer Language Server Binary to path) & cargo-edit & clippy
-- java 
+- java
 - Node & npm
 - LaTeX & latexmk (vimtex) & luatex
-- Pandoc 
+- Pandoc
 - Atom
 - Julia
 - Install lsp servers (julials (Pkg), pylsp (pip), TexLab (cargo), rust (Plug))
 - julials (LanguageServer, SymbolServer, CSTParser, and StaticLint)
-- nvim-treesitter TSInstall: julia - rust - latex - python
+- nvim-treesitter TSInstall: julia - rust - latex - bibtex - markdown - python - fortran - lua - make
 - i3 + i3 status (from starter pack)
 - picom
 - paraview
@@ -38,11 +38,12 @@ Remember to:
 - Homebrew
 - YaLafi
 - FreeFEM++
+- GParted
 
 # Snap
 - VCL
 - Visual Code (Code lldb)
-- Zoom 
+- Zoom
 - Skype
 - Discord
 

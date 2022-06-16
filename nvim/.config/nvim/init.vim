@@ -21,7 +21,6 @@ Plug 'nvim-treesitter/playground'
 
 " Debugger Plugins
 Plug 'mfussenegger/nvim-dap'
-Plug 'Pocco81/DAPInstall.nvim'
 Plug 'rcarriga/nvim-dap-ui'
 
 " Snippets
@@ -42,7 +41,6 @@ Plug 'tpope/vim-projectionist'
 " ThePrimeagen
 Plug 'ThePrimeagen/harpoon'
 Plug 'ThePrimeagen/git-worktree.nvim'
-"Plug 'ThePrimeagen/af-pluth-pluth'
 
 " telescope requirements...
 Plug 'nvim-lua/popup.nvim'
@@ -59,9 +57,8 @@ Plug 'ambv/black'
 "TTp
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'kdheepak/JuliaFormatter.vim'
-"Plug 'rust-lang/rust.vim'
 Plug 'simrat39/rust-tools.nvim'
-Plug 'sheerun/vim-polyglot'
+Plug 'rust-lang/rust.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
 Plug 'hoob3rt/lualine.nvim'

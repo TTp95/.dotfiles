@@ -46,7 +46,7 @@ bindsym $mod+Shift+s exec paraview
 bindsym $mod+Shift+a exec dvorakInternational
 bindsym $mod+Shift+o exec discord
 bindsym $mod+Shift+e exec skype
-bindsym $mod+Shift+u exec zoom-client
+bindsym $mod+Shift+u exec zoom
 
 # kill focused window
 bindsym $mod+Shift+c kill
