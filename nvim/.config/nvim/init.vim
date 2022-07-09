@@ -10,10 +10,10 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'onsails/lspkind-nvim'
 Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
 
-Plug 'glepnir/lspsaga.nvim'
-Plug 'simrat39/symbols-outline.nvim'
 Plug 'tjdevries/lsp_extensions.nvim'
 Plug 'ray-x/lsp_signature.nvim'
+Plug 'glepnir/lspsaga.nvim'
+Plug 'simrat39/symbols-outline.nvim'
 
 " Neovim Tree shitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -29,16 +29,17 @@ Plug 'rafamadriz/friendly-snippets'
 
 " Vim pro
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rhubarb'
-Plug 'junegunn/gv.vim'
+Plug 'TimUntersberger/neogit'
+Plug 'airblade/vim-gitgutter'
+"Plug 'tpope/vim-rhubarb'
+"Plug 'junegunn/gv.vim'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-dispatch'
-Plug 'theprimeagen/vim-be-good'
-Plug 'gruvbox-community/gruvbox'
 Plug 'tpope/vim-projectionist'
 
 " ThePrimeagen
+"Plug 'theprimeagen/vim-be-good'
 Plug 'ThePrimeagen/harpoon'
 Plug 'ThePrimeagen/git-worktree.nvim'
 
@@ -59,7 +60,6 @@ Plug 'JuliaEditorSupport/julia-vim'
 Plug 'kdheepak/JuliaFormatter.vim'
 Plug 'simrat39/rust-tools.nvim'
 Plug 'rust-lang/rust.vim'
-Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdcommenter'
 Plug 'hoob3rt/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
@@ -74,12 +74,7 @@ Plug 'lervag/vimtex'
 Plug 'https://github.com/rhysd/vim-grammarous.git' "Powerful Grammar check
 
 " Color Schemes
-Plug 'flazz/vim-colorschemes'
-Plug 'chriskempson/base16-vim'
-Plug 'projekt0n/github-nvim-theme'
-Plug 'navarasu/onedark.nvim'
-Plug 'shaunsingh/moonlight.nvim'
-Plug 'tiagovla/tokyodark.nvim'
+Plug 'gruvbox-community/gruvbox'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 call plug#end()

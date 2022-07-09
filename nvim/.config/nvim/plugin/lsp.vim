@@ -8,6 +8,7 @@ nnoremap <leader>vrn :lua vim.lsp.buf.rename()<CR>
 nnoremap <leader>vi :lua vim.lsp.buf.implementation()<CR>
 nnoremap <leader>K :lua vim.lsp.buf.hover()<CR>
 nnoremap <leader>vca :lua vim.lsp.buf.code_action()<CR>
+nnoremap <leader>vws :lua vim.lsp.buf.workspace_symbol()<CR>
 nnoremap <leader>vd :lua vim.diagnostic.open_float()<CR>
 nnoremap <leader>vn :lua vim.diagnostic.goto_next()<CR>
 nnoremap <leader>vN :lua vim.diagnostic.goto_prev()<CR>

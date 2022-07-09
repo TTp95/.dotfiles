@@ -1,5 +1,3 @@
-" lualine
-lua << EOF
 require'lualine'.setup{
   options = {
     theme = 'tokyonight'
@@ -26,5 +24,3 @@ require'lualine'.setup{
     }
   }
 }
-EOF
-
