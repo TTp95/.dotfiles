@@ -21,7 +21,7 @@ Remember to:
 - LaTeX & latexmk (vimtex) & luatex
 - Pandoc
 - Julia
-- Go
+- Go & delve -> Debug
 - Install lsp servers (julials (Pkg), pylsp (pip), TexLab (cargo), rust (Plug), gopls (go), fortls (pip))
 - julials (LanguageServer, SymbolServer, CSTParser, and StaticLint)
 - nvim-treesitter TSInstall: julia - rust - latex - bibtex - markdown - python - fortran - lua - go - make
@@ -33,13 +33,13 @@ Remember to:
 - zsh
 - fzf
 - htop, NVTOP
-- lldb (Visual Code)
+- lldb (Visual Code) -> Debug
 - Openboard
 - Homebrew
 - YaLafi
 - FreeFEM++
 - GParted
-- VirtualBox 
+- VirtualBox
 
 # Snap
 - VCL

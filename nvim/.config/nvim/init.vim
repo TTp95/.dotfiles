@@ -22,6 +22,7 @@ Plug 'nvim-treesitter/playground'
 " Debugger Plugins
 Plug 'mfussenegger/nvim-dap'
 Plug 'rcarriga/nvim-dap-ui'
+Plug 'theHamsta/nvim-dap-virtual-text'
 
 " Snippets
 Plug 'L3MON4D3/LuaSnip'
@@ -48,6 +49,7 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'nvim-telescope/telescope-dap.nvim'
 
 " prettier
 Plug 'sbdchd/neoformat'
@@ -56,10 +58,19 @@ Plug 'sbdchd/neoformat'
 Plug 'ambv/black'
 
 "TTp
+
+" Julia
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'kdheepak/JuliaFormatter.vim'
+
+" Rust
 Plug 'simrat39/rust-tools.nvim'
 Plug 'rust-lang/rust.vim'
+
+" Go
+Plug 'leoluz/nvim-dap-go'
+
+" Dev
 Plug 'scrooloose/nerdcommenter'
 Plug 'hoob3rt/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
