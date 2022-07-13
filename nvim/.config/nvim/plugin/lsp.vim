@@ -17,6 +17,7 @@ nnoremap <leader>vN :lua vim.diagnostic.goto_prev()<CR>
 lua require'lspconfig'.pylsp.setup{ on_attach=on_attach }
 lua require'lspconfig'.julials.setup{ on_attach=on_attach }
 lua require'lspconfig'.texlab.setup{ on_attach=on_attach }
+lua require'lspconfig'.gopls.setup{ on_attach=on_attach }
 lua require'lspconfig'.fortls.setup{ on_attach=on_attach }
 
 " Rust

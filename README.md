@@ -20,11 +20,11 @@ Remember to:
 - Node & npm
 - LaTeX & latexmk (vimtex) & luatex
 - Pandoc
-- Atom
 - Julia
-- Install lsp servers (julials (Pkg), pylsp (pip), TexLab (cargo), rust (Plug))
+- Go
+- Install lsp servers (julials (Pkg), pylsp (pip), TexLab (cargo), rust (Plug), gopls (go), fortls (pip))
 - julials (LanguageServer, SymbolServer, CSTParser, and StaticLint)
-- nvim-treesitter TSInstall: julia - rust - latex - bibtex - markdown - python - fortran - lua - make
+- nvim-treesitter TSInstall: julia - rust - latex - bibtex - markdown - python - fortran - lua - go - make
 - i3 + i3 status (from starter pack)
 - picom
 - paraview
@@ -32,13 +32,14 @@ Remember to:
 - rar
 - zsh
 - fzf
-- htop
-- lldb
+- htop, NVTOP
+- lldb (Visual Code)
 - Openboard
 - Homebrew
 - YaLafi
 - FreeFEM++
 - GParted
+- VirtualBox 
 
 # Snap
 - VCL
