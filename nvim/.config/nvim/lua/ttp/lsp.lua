@@ -173,3 +173,5 @@ require("luasnip.loaders.from_vscode").lazy_load({
     include = nil,  -- Load all languages
     exclude = {}
 })
+
+--require("lsp_signature").on_attach()

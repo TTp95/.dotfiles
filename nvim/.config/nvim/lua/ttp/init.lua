@@ -6,6 +6,7 @@ require("ttp.telescope")
 require("ttp.debugger")
 require("ttp.netrw")
 require("ttp.neogit")
+require("ttp.treesitter")
 
 require("ttp.keymaps")
 

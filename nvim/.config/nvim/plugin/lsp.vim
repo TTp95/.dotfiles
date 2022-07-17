@@ -43,7 +43,7 @@ EOF
 autocmd Filetype julia setlocal omnifunc=v:lua.vim.lsp.omnifunc
 autocmd Filetype julia hi link juliaFunctionCall Identifier
 autocmd Filetype julia hi Operator guifg=Red ctermfg=Red
-autocmd Filetype julia lua require("lsp_signature").on_attach()
+"autocmd Filetype julia lua require("lsp_signature").on_attach()
 
 "nvim-dap
 nnoremap <silent> <F5> :lua require'dap'.continue()<CR>

@@ -33,15 +33,12 @@ Plug 'rafamadriz/friendly-snippets'
 Plug 'tpope/vim-fugitive'
 Plug 'TimUntersberger/neogit'
 Plug 'airblade/vim-gitgutter'
-"Plug 'tpope/vim-rhubarb'
-"Plug 'junegunn/gv.vim'
 Plug 'vim-utils/vim-man'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-projectionist'
 
 " ThePrimeagen
-"Plug 'theprimeagen/vim-be-good'
 Plug 'ThePrimeagen/harpoon'
 Plug 'ThePrimeagen/git-worktree.nvim'
 
@@ -76,6 +73,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'hoob3rt/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Markdown + Writinn
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
@@ -92,22 +90,6 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 call plug#end()
 
 lua require("ttp")
-lua require'nvim-treesitter.configs'.setup { indent = { enable = true }, highlight = { enable = true, additional_vim_regex_highlighting = true, }, incremental_selection = { enable = true }, textobjects = { enable = true }}
-lua require'treesitter-context'.setup{}
-let g:vim_be_good_log_file = 1
-let g:vim_apm_log = 1
-let g:user_emmet_settings = {
-  \  'svelte' : {
-  \    'extends' : 'html',
-  \  },
-  \}
-
-if executable('rg')
-    let g:rg_derive_root='true'
-endif
-
-"let loaded_matchparen = 1
-let mapleader = " "
 
 imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>'
 inoremap <silent> <S-Tab> <cmd>lua require'luasnip'.jump(-1)<Cr>
@@ -159,28 +141,10 @@ nnoremap <leader>Y gg"+yG
 nnoremap <leader>d "_d
 vnoremap <leader>d "_d
 
-" vim TODO
-nmap <Leader>tu <Plug>BujoChecknormal
-nmap <Leader>th <Plug>BujoAddnormal
-let g:bujo#todo_file_path = $HOME . "/.cache/bujo"
-
-nnoremap <Leader>ww ofunction wait(ms: number): Promise<void> {<CR>return new Promise(res => setTimeout(res, ms));<CR>}<esc>k=i{<CR>
-
 inoremap <C-c> <esc>
-
-fun! EmptyRegisters()
-    let regs=split('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-"', '\zs')
-    for r in regs
-        call setreg(r, [])
-    endfor
-endfun
 
 " ES
 com! W w
-
-nmap <leader>nn :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
-\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
-\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
 augroup highlight_yank
     autocmd!
@@ -231,7 +195,6 @@ map <leader>tz :tabonly<cr>
 "Compiler
 " Compile document, be it groff/LaTeX/markdown/etc.
 map <leader>,c :w! \| !compiler <c-r>%<CR>
-
 
 " Vimtex
 augroup VimTex
