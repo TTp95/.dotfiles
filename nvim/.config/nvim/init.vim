@@ -18,6 +18,7 @@ Plug 'simrat39/symbols-outline.nvim'
 " Neovim Tree shitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/playground'
+Plug 'nvim-treesitter/nvim-treesitter-context'
 
 " Debugger Plugins
 Plug 'mfussenegger/nvim-dap'
@@ -92,6 +93,7 @@ call plug#end()
 
 lua require("ttp")
 lua require'nvim-treesitter.configs'.setup { indent = { enable = true }, highlight = { enable = true, additional_vim_regex_highlighting = true, }, incremental_selection = { enable = true }, textobjects = { enable = true }}
+lua require'treesitter-context'.setup{}
 let g:vim_be_good_log_file = 1
 let g:vim_apm_log = 1
 let g:user_emmet_settings = {
@@ -104,7 +106,7 @@ if executable('rg')
     let g:rg_derive_root='true'
 endif
 
-let loaded_matchparen = 1
+"let loaded_matchparen = 1
 let mapleader = " "
 
 imap <silent><expr> <Tab> luasnip#expand_or_jumpable() ? '<Plug>luasnip-expand-or-jump' : '<Tab>'
