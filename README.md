@@ -21,7 +21,7 @@ Remember to:
 - LaTeX & latexmk (vimtex) & luatex
 - Julia
 - Go & delve -> Debug
-- c++ -> g++ (build-essential) & clang
+- c++ -> g++ (build-essential) & clang & ccls
 - Install lsp servers (julials (Pkg), pylsp (pip), TexLab (cargo), rust (ready), gopls (go), fortls (pip), ccls (ready))
 - julials (LanguageServer, SymbolServer, CSTParser, and StaticLint)
 - i3 + i3 status (from starter pack)
