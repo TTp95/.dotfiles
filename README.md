@@ -19,12 +19,11 @@ Remember to:
 - java
 - Node & npm
 - LaTeX & latexmk (vimtex) & luatex
-- Pandoc
 - Julia
 - Go & delve -> Debug
-- Install lsp servers (julials (Pkg), pylsp (pip), TexLab (cargo), rust (Plug), gopls (go), fortls (pip))
+- c++ -> g++ (build-essential) & clang
+- Install lsp servers (julials (Pkg), pylsp (pip), TexLab (cargo), rust (ready), gopls (go), fortls (pip), ccls (ready))
 - julials (LanguageServer, SymbolServer, CSTParser, and StaticLint)
-- nvim-treesitter TSInstall: julia - rust - latex - bibtex - markdown - python - fortran - lua - go - make
 - i3 + i3 status (from starter pack)
 - picom
 - paraview
@@ -36,6 +35,7 @@ Remember to:
 - lldb (Visual Code) -> Debug
 - Openboard
 - Homebrew
+- Pandoc
 - YaLafi
 - FreeFEM++
 - GParted

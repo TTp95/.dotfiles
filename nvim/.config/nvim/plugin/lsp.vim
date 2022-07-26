@@ -14,13 +14,15 @@ nnoremap <leader>vn :lua vim.diagnostic.goto_next()<CR>
 nnoremap <leader>vN :lua vim.diagnostic.goto_prev()<CR>
 
 " Lsp Servers
-lua require'lspconfig'.pylsp.setup{ on_attach=on_attach }
 lua require'lspconfig'.julials.setup{ on_attach=on_attach }
+lua require'lspconfig'.pylsp.setup{ on_attach=on_attach }
 lua require'lspconfig'.texlab.setup{ on_attach=on_attach }
 lua require'lspconfig'.gopls.setup{ on_attach=on_attach }
 lua require'lspconfig'.fortls.setup{ on_attach=on_attach }
+lua require'lspconfig'.ccls.setup{ on_attach=on_attach }
+lua require'lspconfig'.gdscript.setup{ on_attach=on_attach }
 
-" Rust
+" Rust + RustLSP + Debug
 lua << EOF
 -- Update this path
 local extension_path = vim.env.HOME .. '/.vscode/extensions/vadimcn.vscode-lldb-1.6.10/'
