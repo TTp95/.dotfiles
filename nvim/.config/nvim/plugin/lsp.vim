@@ -25,7 +25,7 @@ lua require'lspconfig'.gdscript.setup{ on_attach=on_attach }
 " Rust + RustLSP + Debug
 lua << EOF
 -- Update this path
-local extension_path = vim.env.HOME .. '/.vscode/extensions/vadimcn.vscode-lldb-1.6.10/'
+local extension_path = vim.env.HOME .. '/.vscode/extensions/vadimcn.vscode-lldb-1.7.3/'
 local codelldb_path = extension_path .. 'adapter/codelldb'
 local liblldb_path = extension_path .. 'lldb/lib/liblldb.so'
 

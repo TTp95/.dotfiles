@@ -15,13 +15,14 @@ Remember to:
 - Python 3
 - pip3
 - lua
-- Rust & cargo & rust-analyzer (rust-analyzer Language Server Binary to path) & cargo-edit & clippy
-- java
+- Rust & cargo & clippy & rust-analyzer (rust-analyzer Language Server Binary to path)
+- java & javac
 - Node & npm
 - LaTeX & latexmk (vimtex) & luatex
 - Julia
 - Go & delve -> Debug
 - c++ -> g++ (build-essential) & clang & ccls
+- gfortran
 - Install lsp servers (julials (Pkg), pylsp (pip), TexLab (cargo), rust (ready), gopls (go), fortls (pip), ccls (ready))
 - julials (LanguageServer, SymbolServer, CSTParser, and StaticLint)
 - i3 + i3 status (from starter pack)
@@ -37,9 +38,10 @@ Remember to:
 - Homebrew
 - Pandoc
 - YaLafi
-- FreeFEM++
 - GParted
 - VirtualBox
+- FreeFEM++
+- TexMath
 
 # Snap
 - VCL
