@@ -12,7 +12,7 @@ order += "load"
 order += "cpu_temperature 0"
 order += "disk /"
 order += "disk /home"
-order += "ethernet eno1"
+order += "ethernet eno2"
 order += "wireless wlo1"
 order += "volume master"
 order += "battery 1"
@@ -35,7 +35,7 @@ disk "/home" {
         format = "<span background='#a1d569'>  %free Free </span>"
 }
 
-ethernet eno1	 {
+ethernet eno2	 {
         format_up = "<span background='#88c0d0'> 💻 %ip </span>"
         format_down = "<span background='#88c0d0'> 💻 Disconnected </span>"
 }
