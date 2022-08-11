@@ -42,6 +42,9 @@ Remember to:
 - VirtualBox
 - FreeFEM++
 - TexMath
+- TeamViwer
+- FortiClient
+- Godot
 
 # Snap
 - VCL

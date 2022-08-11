@@ -10,14 +10,12 @@ font pango: Noto Sans 10
 floating_modifier $mod
 
 #autostart
-exec --no-startup-id "setxkbmap -layout dvorak_intl_ndk_fad, us"
-exec_always --no-startup-id "setxkbmap -layout dvorak_intl_ndk_fad, us"
-exec --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
+#exec --no-startup-id "setxkbmap -layout dvorak_intl_ndk_fad, us"
+#exec_always --no-startup-id "setxkbmap -layout dvorak_intl_ndk_fad, us"
+#exec --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
 exec --no-startup-id hsetroot -center ~/.wallpaper.jpeg
-#exec --no-startup-id hsetroot -center ~/.wallpaper.png
 exec --no-startup-id xsettingsd &
 exec --no-startup-id picom -b
-#exec --no-startup-id compton -b
 exec_always --no-startup-id nm-applet
 exec --no-startup-id clipit &;
 #exec --no-startup-id dunst
