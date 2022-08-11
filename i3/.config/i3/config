@@ -195,5 +195,5 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec ~/.config/i3/bin/backlight -inc 20
-bindsym XF86MonBrightnessDown exec ~/.config/i3/bin/backlight -inc -20
+bindsym XF86MonBrightnessUp exec ~/.config/i3/bin/backlight -inc 10000
+bindsym XF86MonBrightnessDown exec ~/.config/i3/bin/backlight -inc -10000

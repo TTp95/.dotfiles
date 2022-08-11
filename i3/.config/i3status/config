@@ -19,7 +19,7 @@ order += "battery 1"
 order += "tztime local"
 
 load {
-        format = "<span background='#f59335'> ☢ %5min Load </span>"
+        format = "<span background='#f59335'>  %5min Load </span>"
 }
 
 cpu_temperature 0 {
@@ -28,11 +28,11 @@ cpu_temperature 0 {
 }
 
 disk "/" {
-        format = "<span background='#fec7cd'>  %free Free </span>"
+        format = "<span background='#fec7cd'>  %free Free </span>"
 }
 
 disk "/home" {
-        format = "<span background='#a1d569'>  %free Free </span>"
+        format = "<span background='#a1d569'>  %free Free </span>"
 }
 
 ethernet eno1	 {
@@ -46,8 +46,8 @@ wireless wlo1 {
 }
 
 volume master {
-        format = "<span background='#ebcb8b'>  %volume </span>"
-        format_muted = "<span background='#ebcb8b'>  Muted </span>"
+        format = "<span background='#ebcb8b'>  %volume </span>"
+        format_muted = "<span background='#ebcb8b'>  Muted </span>"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
@@ -61,13 +61,12 @@ battery 1 {
         status_bat = "Battery"
         status_unk = "Unknown"
         status_full = "Charged"
-        #path = "/sys/class/power_supply/BAT%d/uevent"
-        path = "/sys/class/power_supply/BAT0/uevent"
+        path = "/sys/class/power_supply/BAT1/uevent"
         low_threshold = 10
 }
 
 tztime local {
 		format = "<span background='#81a1c1'> %time </span>"
-		format_time = " %a %-d %b %H:%M"
+		format_time = " %a %-d %b %H:%M"
 }
 		

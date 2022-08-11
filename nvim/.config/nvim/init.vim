@@ -86,7 +86,7 @@ Plug 'https://github.com/rhysd/vim-grammarous.git' "Powerful Grammar check
 " Color Schemes
 Plug 'gruvbox-community/gruvbox'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
-Plug 'shaunsingh/oxocarbon.nvim', { 'do': './install.sh' }
+"Plug 'shaunsingh/oxocarbon.nvim', { 'do': './install.sh' }
 
 call plug#end()
 
