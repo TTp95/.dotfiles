@@ -87,6 +87,7 @@ Plug 'https://github.com/rhysd/vim-grammarous.git' "Powerful Grammar check
 Plug 'gruvbox-community/gruvbox'
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 "Plug 'shaunsingh/oxocarbon.nvim', { 'do': './install.sh' }
+"Plug 'Everblush/everblush.nvim', { 'as': 'everblush' }
 
 call plug#end()
 

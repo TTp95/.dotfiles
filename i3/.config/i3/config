@@ -10,15 +10,13 @@ font pango: Noto Sans 10
 floating_modifier $mod
 
 #autostart
-#exec --no-startup-id "setxkbmap -layout dvorak_intl_ndk_fad, us"
-#exec_always --no-startup-id "setxkbmap -layout dvorak_intl_ndk_fad, us"
-#exec --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle'"
+exec_always --no-startup-id nm-applet
 exec --no-startup-id hsetroot -center ~/.wallpaper.jpeg
 exec --no-startup-id xsettingsd &
 exec --no-startup-id picom -b
-exec_always --no-startup-id nm-applet
 exec --no-startup-id clipit &;
-#exec --no-startup-id dunst
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+exec xinput set-prop "ASUP1205:00 093A:2003 Touchpad" "libinput Tapping Enabled" 1
 
 # start a terminale
 bindsym $mod+Return exec gnome-terminal
@@ -173,7 +171,6 @@ bindsym $mod+Shift+q      mode $power_mode
 mode $power_mode {
     bindsym p         exec systemctl poweroff
     bindsym r         exec systemctl reboot
-    bindsym l         exec i3lock -i /home/koromicha/Pictures/linuxtux.png, mode "default"
     bindsym q         exec --no-startup-id i3-msg exit, mode "default"
     bindsym h         exec sudo systemctl hibernate
     bindsym s         exec sudo systemctl suspend

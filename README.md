@@ -25,7 +25,8 @@ Remember to:
 - gfortran
 - Install lsp servers (julials (Pkg), pylsp (pip), TexLab (cargo), rust (ready), gopls (go), fortls (pip), ccls (ready))
 - julials (LanguageServer, SymbolServer, CSTParser, and StaticLint)
-- i3 + i3 status (from starter pack)
+- i3 + i3 status (from starter pack) -> i3 + GNOME
+- policykit-desktop-privileges & policykit-1-gnome
 - picom
 - paraview
 - Inkscape + (LaTeX app TexTex)
@@ -47,11 +48,12 @@ Remember to:
 - Godot
 
 # Snap
-- VCL
 - Visual Code (Code lldb)
+- VCL
 - Zoom
 - Skype
 - Discord
+- OBS
 
 # Pay License
 - ReadCube Papers
