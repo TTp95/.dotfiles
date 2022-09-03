@@ -47,7 +47,7 @@ wireless wlo1 {
 
 volume master {
         format = "<span background='#ebcb8b'>  %volume </span>"
-        format_muted = "<span background='#ebcb8b'>  Muted </span>"
+        format_muted = "<span background='#ebcb8b'>  Muted </span>"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
