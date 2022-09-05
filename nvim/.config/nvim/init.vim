@@ -173,8 +173,8 @@ inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 "GITGUTTER
-nmap ) <Plug>(GitGutterNextHunk)
-nmap ( <Plug>(GitGutterPrevHunk)
+nmap <leader>) <Plug>(GitGutterNextHunk)
+nmap <leader>( <Plug>(GitGutterPrevHunk)
 let g:gitgutter_enabled = 1
 let g:gitgutter_map_keys = 0
 let g:gitgutter_highlight_linenrs = 1
