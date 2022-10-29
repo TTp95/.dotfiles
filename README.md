@@ -12,6 +12,7 @@ Remember to:
 - stow
 - neovim
 - Kitty
+- Tmux
 - Python 3
 - pip3
 - lua
@@ -34,21 +35,18 @@ Remember to:
 - zsh
 - fzf
 - htop, NVTOP
-- lldb (Visual Code) -> Debug
 - Openboard
 - Homebrew
 - Pandoc
 - YaLafi
 - GParted
 - VirtualBox
-- FreeFEM++
 - TexMath
 - TeamViwer
 - FortiClient
-- Godot
 
 # Snap
-- Visual Code (Code lldb)
+- Visual Code (Code lldb) -> lldb (Visual Code) -> Debug
 - VCL
 - Zoom
 - Skype
