@@ -1,7 +1,6 @@
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
-local cmp = require("cmp")
 local source_mapping = {
 	buffer = "[Buffer]",
 	nvim_lsp = "[LSP]",
@@ -97,8 +96,9 @@ cmp.setup({
         { name = 'buffer' },
 
         -- tabnine completion? yayaya -Prime
-
 		{ name = "cmp_tabnine" },
+
+		{ name = "path" },
     }
 })
 

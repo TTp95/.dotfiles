@@ -33,7 +33,7 @@ Remember to:
 - Inkscape + (LaTeX app TexTex)
 - rar
 - zsh
-- fzf
+- fzf, ripgrep, fd-find
 - htop, NVTOP
 - Openboard
 - Homebrew

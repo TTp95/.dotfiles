@@ -6,6 +6,7 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'onsails/lspkind-nvim'
 Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
@@ -69,7 +70,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'leoluz/nvim-dap-go'
 
 " Dev
-Plug 'scrooloose/nerdcommenter'
+Plug 'numToStr/Comment.nvim'
 Plug 'hoob3rt/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
@@ -165,8 +166,24 @@ augroup END
 "TTp - my list of remap
 "-----------------------
 "-----------------------
-vmap ++ <plug>NERDCommenterToggle
-nmap ++ <plug>NERDCommenterToggle
+lua << EOF
+require('Comment').setup({
+    ---LHS of toggle mappings in NORMAL mode
+    toggler = {
+        ---Line-comment toggle keymap
+        line = '\\\\',
+        ---Block-comment toggle keymap
+        block = '<leader>==',
+    },
+    ---LHS of operator-pending mappings in NORMAL and VISUAL mode
+    opleader = {
+        ---Line-comment keymap
+        line = '\\\\',
+        ---Block-comment keymap
+        block = '<leader>==',
+    },
+})
+EOF
 
 " Use <Tab> and <S-Tab> to navigate through popup menu
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
