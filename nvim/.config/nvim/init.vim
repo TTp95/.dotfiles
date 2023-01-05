@@ -42,12 +42,13 @@ Plug 'tpope/vim-projectionist'
 " ThePrimeagen
 Plug 'ThePrimeagen/harpoon'
 Plug 'ThePrimeagen/git-worktree.nvim'
+Plug 'ThePrimeagen/vim-be-good'
 
 " telescope requirements...
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-telescope/telescope-fzy-native.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope-dap.nvim'
 
 " prettier
@@ -171,16 +172,16 @@ require('Comment').setup({
     ---LHS of toggle mappings in NORMAL mode
     toggler = {
         ---Line-comment toggle keymap
-        line = '\\\\',
+        line = '\\',
         ---Block-comment toggle keymap
-        block = '<leader>==',
+        block = '<leader>=',
     },
     ---LHS of operator-pending mappings in NORMAL and VISUAL mode
     opleader = {
         ---Line-comment keymap
-        line = '\\\\',
+        line = '\\',
         ---Block-comment keymap
-        block = '<leader>==',
+        block = '<leader>=',
     },
 })
 EOF
