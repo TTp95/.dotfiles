@@ -24,7 +24,7 @@ Remember to:
 - Go & delve -> Debug
 - c++ -> g++ (build-essential) & clang & ccls
 - gfortran
-- Install lsp servers (julials (Pkg), pylsp (pip), TexLab (cargo), rust (ready), gopls (go), fortls (pip), ccls (ready))
+- Install lsp servers (julials (Pkg), pylsp (pip), TexLab (cargo), rust (ready), lua (lua-language-server), gopls (go), fortls (pip), ccls (ready))
 - julials (LanguageServer, SymbolServer, CSTParser, and StaticLint)
 - i3 + i3 status (from starter pack) -> i3 + GNOME
 - policykit-desktop-privileges & policykit-1-gnome
@@ -55,3 +55,4 @@ Remember to:
 
 # Pay License
 - ReadCube Papers
+- Overleaf

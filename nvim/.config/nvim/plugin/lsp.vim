@@ -14,6 +14,7 @@ nnoremap <leader>vn :lua vim.diagnostic.goto_next()<CR>
 nnoremap <leader>vN :lua vim.diagnostic.goto_prev()<CR>
 
 " Lsp Servers
+lua require'lspconfig'.sumneko_lua.setup{ on_attach=on_attach }
 lua require'lspconfig'.julials.setup{ on_attach=on_attach }
 lua require'lspconfig'.pylsp.setup{ on_attach=on_attach }
 lua require'lspconfig'.texlab.setup{ on_attach=on_attach }
