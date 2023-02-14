@@ -32,7 +32,7 @@ Remember to:
 - paraview
 - Inkscape + (LaTeX app TexTex)
 - rar
-- zsh
+- zsh - Oh My Zsh
 - fzf, ripgrep, fd-find
 - htop, NVTOP
 - Openboard
