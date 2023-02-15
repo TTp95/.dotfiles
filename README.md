@@ -6,6 +6,7 @@ Remember to:
 - Check Bashrc.
 - Change brightness file -> sudo find /sys/ -type f -iname 'brightness'
 - Remember to use nvim -> :checkhealth
+- vim rename ->  ln -s ~/software/nvim/usr/bin/nvim ~/.local/bin/vim 
 
 # Install
 - git
