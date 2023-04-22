@@ -1,4 +1,5 @@
-require'nvim-treesitter.configs'.setup {
+
+require('nvim-treesitter.configs').setup({
     ensure_installed = "all",
     sync_install = false,
     indent = {
@@ -14,7 +15,7 @@ require'nvim-treesitter.configs'.setup {
     textobjects = {
         enable = true
     },
-}
+})
 
 require("treesitter-context").setup({
     enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)

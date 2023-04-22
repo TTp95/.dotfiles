@@ -106,7 +106,6 @@ return{
     -- Rust Lang
     {'simrat39/rust-tools.nvim'},
 
-
     -- Dev
     {'numToStr/Comment.nvim'},
     {'hoob3rt/lualine.nvim'},
